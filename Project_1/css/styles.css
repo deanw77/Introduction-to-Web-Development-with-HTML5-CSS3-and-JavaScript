@@ -10,11 +10,13 @@
 .container {
     max-width: 1200px;
     margin: auto;
+    padding: 12px;
 }
 
 header {
     background-color: black;
     padding: 12px;
+    margin-bottom: 20px;
 }
 
 .flex_one {
@@ -31,4 +33,75 @@ header img {
 header h1, header h2 {
     color: antiquewhite;
     text-align: center;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+.grid_section {
+    display: grid;
+    gap: 12px;
+    grid-template-areas: "HTML5 HTML5 CSS3"
+                         "JavaScript DOM CSS3"
+                         "JavaScript REACT REACT";
+}
+
+article {
+    border: 2px solid black;
+    border-radius: 5px;
+    min-width: 100px;
+    min-height: 100px;
+    text-align: center;
+    padding-top: 12px;
+    font-weight: bold;
+}
+
+#HTML5 {
+    grid-area: HTML5;
+    background-color: orange;
+}
+
+#CSS3 {
+    grid-area: CSS3;
+    background-color: chartreuse;
+}
+
+#JavaScript {
+    grid-area: JavaScript;
+    background-color: cyan;
+}
+
+#DOM {
+    grid-area: DOM;
+    background-color: darksalmon;
+}
+
+#REACT {
+    grid-area: REACT;
+    background-color: fuchsia;
+}
+
+h3 {
+    margin: 12px;
+}
+
+.flex_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex_section article {
+    min-width: 250px;
+    min-height: 250px;
+    margin: 10px;
+    justify-self: stretch;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    font-weight: bold;
 }
